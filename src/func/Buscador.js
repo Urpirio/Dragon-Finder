@@ -1,16 +1,24 @@
+import Buscador2 from "./Buscador2";
+import { ValueInput } from "../components/Buscador";
 
-let filtro1;
 let Existe;
-const BuscadorZ = async (Personaje) => {
+let Filtro1;
+let Filtro2;
+let Filtro3;
+let Filtro4;
+let Filtro5;
+let Filtro6;
+let CNofound;
+
+const BuscadorZ = async () => {
     fetch('https://dragonball-api.com/api/characters').then(
         respuesta => respuesta.json()
     ).then(
         (Data) => {
-            let ArrayPersonaje = Personaje.split('')
+            let ArrayValueInput = ValueInput.split('')
             for(let x = 0; x < Data.items.length; x++){
-                // let ArrayNamePersonaje = Data.items[x].name.split('')
-                // let ArrayPersonaje = Personaje.split('')
-                if(Personaje == Data.items[x].name){
+                if(ValueInput == Data.items[x].name){
+                    document.querySelector('.Resultado').style.display = 'flex';
                     document.querySelector('.Resultado').innerHTML = '';
                     const spanS = document.createElement('span');
                     spanS.className = `S${x}`;
@@ -23,41 +31,128 @@ const BuscadorZ = async (Personaje) => {
                     document.querySelector('.Resultado').append(spanS);
 
                 }else{
-                    
+                    // document.querySelector('.Resultado').style.display = 'none';
                 }
             };
 
             
             if(Existe == undefined){
-                // let fill;
-                // document.querySelector('.Resultado').innerHTML= '';
+                document.querySelector('.Resultado').innerHTML= '';
                 for(let x = 0; x < Data.items.length; x++){
-                    let ArrayNamePersonaje = Data.items[x].name.split('')
-                    for(let C = 0; C < ArrayPersonaje.length; C++){
-                        
-                        if(ArrayPersonaje[0] == ArrayNamePersonaje[0]){
+                    let ArrayNameValueInput = Data.items[x].name.split('');
+                    Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                    Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
+                    Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
+                    Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
+                    Filtro5 = Filtro4 && ArrayValueInput[4] == ArrayNameValueInput[4];
+                    Filtro6 = Filtro5 && ArrayValueInput[5] == ArrayNameValueInput[5];
 
-                            // fill = true;
-                            const spanS = document.createElement('span');
-                            spanS.className = `S${x}`;
-                            const InSpanS = document.createElement('span');
-                            InSpanS.innerText = Data.items[x].name;
-                            const iconS = document.createElement('i');
-                            iconS.className = 'bx bx-search';
-                            spanS.append(iconS,InSpanS);
-                            document.querySelector('.Resultado').append(spanS);
 
+
+
+
+
+                        if(1 == ArrayValueInput.length){
+
+                            if(Filtro1 == true){
+                                document.querySelector('.Resultado').style.display = 'flex';
+                                const spanS = document.createElement('span');
+                                spanS.className = `S${x}`;
+                                const InSpanS = document.createElement('span');
+                                InSpanS.innerText = Data.items[x].name;
+                                const iconS = document.createElement('i');
+                                iconS.className = 'bx bx-search';
+                                spanS.append(iconS,InSpanS);
+                                document.querySelector('.Resultado').append(spanS);
+                            }else{
+                                Buscador2()
+                            }
+
+                        }else if (2 == ArrayValueInput.length){
                             
-    
+                            if(Filtro2 == true){
+                                document.querySelector('.Resultado').style.display = 'flex';
+                                const spanS = document.createElement('span');
+                                spanS.className = `S${x}`;
+                                const InSpanS = document.createElement('span');
+                                InSpanS.innerText = Data.items[x].name;
+                                const iconS = document.createElement('i');
+                                iconS.className = 'bx bx-search';
+                                spanS.append(iconS,InSpanS);
+                                document.querySelector('.Resultado').append(spanS);
+                            }
+                           
+                        }else if(3 == ArrayValueInput.length){
+                            if(Filtro3 == true){
+                                document.querySelector('.Resultado').style.display = 'flex';
+                                const spanS = document.createElement('span');
+                                spanS.className = `S${x}`;
+                                const InSpanS = document.createElement('span');
+                                InSpanS.innerText = Data.items[x].name;
+                                const iconS = document.createElement('i');
+                                iconS.className = 'bx bx-search';
+                                spanS.append(iconS,InSpanS);
+                                document.querySelector('.Resultado').append(spanS);
+                            }
+                        }else if(4 == ArrayValueInput.length){
+                            if(Filtro4 == true){
+                                document.querySelector('.Resultado').style.display = 'flex';
+                                const spanS = document.createElement('span');
+                                spanS.className = `S${x}`;
+                                const InSpanS = document.createElement('span');
+                                InSpanS.innerText = Data.items[x].name;
+                                const iconS = document.createElement('i');
+                                iconS.className = 'bx bx-search';
+                                spanS.append(iconS,InSpanS);
+                                document.querySelector('.Resultado').append(spanS);
+                            }
+                        }else if(5 == ArrayValueInput.length){
+                            if(Filtro5 == true){
+                                document.querySelector('.Resultado').style.display = 'flex';
+                                const spanS = document.createElement('span');
+                                spanS.className = `S${x}`;
+                                const InSpanS = document.createElement('span');
+                                InSpanS.innerText = Data.items[x].name;
+                                const iconS = document.createElement('i');
+                                iconS.className = 'bx bx-search';
+                                spanS.append(iconS,InSpanS);
+                                document.querySelector('.Resultado').append(spanS);
+                            }
+                        }else if(6 == ArrayValueInput.length){
+                            if(Filtro6 == true){
+                                document.querySelector('.Resultado').style.display = 'flex';
+                                const spanS = document.createElement('span');
+                                spanS.className = `S${x}`;
+                                const InSpanS = document.createElement('span');
+                                InSpanS.innerText = Data.items[x].name;
+                                const iconS = document.createElement('i');
+                                iconS.className = 'bx bx-search';
+                                spanS.append(iconS,InSpanS);
+                                document.querySelector('.Resultado').append(spanS);
+                            }
+                        }else{
+                            CNofound = true;
+                            Filtro2 = false;
+                            Filtro3 = false;
+                            Filtro4 = false;
+                            Filtro5 = false;
+                            Filtro6 = false;
+                            document.querySelector('.Resultado').style.display = 'none';
                         }
-                    }
-                    if(2 == ArrayPersonaje.length){   
-                        Filtro1(Data,ArrayPersonaje,ArrayNamePersonaje,x)  
-                    };
-                    
+
+                        
+                   
                 }
             }else{
                 Existe = undefined;
+            }
+
+            if(CNofound == true){
+                console.log('funciona')
+                Buscador2();
+                CNofound = false;
+            }else{
+
             }
 
             
@@ -69,54 +164,3 @@ const BuscadorZ = async (Personaje) => {
     )
 };
 export default BuscadorZ;
-
-const Filtro1 = (Data,ArrayPersonaje,ArrayNamePersonaje,x) => {
-    document.querySelector('.Resultado').innerHTML= '';
-    // for(let x = 0; x < Data.items.length; x++){
-    //     alert('F')
-        // let ArrayNamePersonaje = Data.items[x].name.split('')
-        for(let C = 0; C < ArrayPersonaje.length; C++){       
-    
-
-            if(ArrayPersonaje[0] == ArrayNamePersonaje[0] && ArrayPersonaje[1] == ArrayNamePersonaje[1] ){
-                // alert('F')
-                const spanS = document.createElement('span');
-                spanS.className = `S${x}`;
-                const InSpanS = document.createElement('span');
-                InSpanS.innerText = Data.items[x].name;
-                const iconS = document.createElement('i');
-                iconS.className = 'bx bx-search';
-                spanS.append(iconS,InSpanS);
-                document.querySelector('.Resultado').append(spanS);
-
-                
-
-            }
-        }
-    // }
-    if(3 == ArrayPersonaje.length){
-        Filtro2(Data,ArrayPersonaje);
-    }
-}
-const Filtro2 = (Data,ArrayPersonaje) => {
-    alert('funciona')
-    document.querySelector('.Resultado').innerHTML= '';
-    for(let x = 0; x < Data.items.length; x++){
-        let ArrayNamePersonaje = Data.items[x].name.split('')
-        for(let C = 0; C < ArrayPersonaje.length; C++){            
-            if(ArrayPersonaje[0] == ArrayNamePersonaje[0] && ArrayPersonaje[1] == ArrayNamePersonaje[1] && ArrayPersonaje[2] == ArrayNamePersonaje[2] ){
-
-                const spanS = document.createElement('span');
-                spanS.className = `S${x}`;
-                const InSpanS = document.createElement('span');
-                InSpanS.innerText = Data.items[x].name;
-                const iconS = document.createElement('i');
-                iconS.className = 'bx bx-search';
-                spanS.append(iconS,InSpanS);
-                document.querySelector('.Resultado').append(spanS);
-
-
-            }
-        }
-    }
-}
