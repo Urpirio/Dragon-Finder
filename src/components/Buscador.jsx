@@ -3,13 +3,14 @@ import LogoDBS from "../img/logos/LogoDragonBallS.png";
 import '../Style/Buscador.less';
 import BuscadorZ from '../func/Buscador';
 
-
+export let ValueInput;
 export default function Buscador() {
 
     const EstaBuscando = () => {
-        BuscadorZ(document.getElementById('Buscador').value);
+        BuscadorZ();
+        ValueInput = document.getElementById('Buscador').value;
     };
-    
+
   return (
     <section className='Buscador'>
         <div className='Buscador_contenedor'>
@@ -22,7 +23,7 @@ export default function Buscador() {
                     <input onInput={EstaBuscando} type="text" name="" id="Buscador" placeholder='Busca a tu personaje favorito'/>
                 </span>
                 <div className='Resultado'>
-                    {/* <span><i class='bx bx-search' ></i>Goku</span> */}
+
                 </div>
             </div>
         </div>
