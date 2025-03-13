@@ -2,19 +2,18 @@ import React from 'react'
 import LogoDBS from "../img/logos/image.png";
 import '../Style/Buscador.less';
 import BuscadorZ from '../func/Buscador';
-import InfoPersonaje from './InfoPersonaje';
+// import InfoPersonaje from './InfoPersonaje';
 
-export let ValueInput;
+
 export default function Buscador() {
 
     const EstaBuscando = () => {
-        BuscadorZ();
-        ValueInput = document.getElementById('Buscador').value;
+        BuscadorZ(document.getElementById('Buscador').value);
     };
 
   return (
-    <section className='Buscador'>
-        <InfoPersonaje/>
+    <section className='Buscador B1'>
+        {/* <InfoPersonaje/> */}
         <div className='Buscador_contenedor'>
             <div className='Buscador_contenedor_div1'>
                 <img src={LogoDBS} alt="Logo Dragon Ball super" />
