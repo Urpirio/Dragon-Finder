@@ -1,7 +1,8 @@
 import React from 'react'
-import LogoDBS from "../img/logos/LogoDragonBallS.png";
+import LogoDBS from "../img/logos/image.png";
 import '../Style/Buscador.less';
 import BuscadorZ from '../func/Buscador';
+import InfoPersonaje from './InfoPersonaje';
 
 export let ValueInput;
 export default function Buscador() {
@@ -13,6 +14,7 @@ export default function Buscador() {
 
   return (
     <section className='Buscador'>
+        <InfoPersonaje/>
         <div className='Buscador_contenedor'>
             <div className='Buscador_contenedor_div1'>
                 <img src={LogoDBS} alt="Logo Dragon Ball super" />
