@@ -1,5 +1,5 @@
 import Buscador2 from "./Buscador2";
-import { ValueInput } from "../components/Buscador";
+// import { ValueInput } from "../components/Buscador";
 import Infopersonaje from "./Infopersonaje";
 
 let Existe;
@@ -10,7 +10,7 @@ let Filtro4;
 let Filtro5;
 let Filtro6;
 
-const BuscadorZ = async () => {
+const BuscadorZ = async (ValueInput) => {
     let Yes_Pass;
     
     fetch('https://dragonball-api.com/api/characters').then(
@@ -71,6 +71,8 @@ const BuscadorZ = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -81,7 +83,7 @@ const BuscadorZ = async () => {
                                
                             }
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }else{
 
                             }
@@ -111,6 +113,7 @@ const BuscadorZ = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -121,7 +124,7 @@ const BuscadorZ = async () => {
  
                             }
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }else{
 
                             }
@@ -151,6 +154,8 @@ const BuscadorZ = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -161,7 +166,7 @@ const BuscadorZ = async () => {
   
                             }
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }else{
 
                             }
@@ -191,6 +196,8 @@ const BuscadorZ = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -201,7 +208,7 @@ const BuscadorZ = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }else{
 
                             }
@@ -232,6 +239,8 @@ const BuscadorZ = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -242,7 +251,7 @@ const BuscadorZ = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }else{
 
                             }
@@ -274,6 +283,8 @@ const BuscadorZ = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -284,7 +295,7 @@ const BuscadorZ = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }else{
 
                             }
@@ -292,7 +303,7 @@ const BuscadorZ = async () => {
                             document.querySelector('.Resultado').style.display = 'none';
 
                             if(Yes_Pass === undefined){
-                                Buscador2();
+                                Buscador2(ValueInput);
                             }
                         }
 
