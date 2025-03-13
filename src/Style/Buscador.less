@@ -7,13 +7,23 @@
 body{
     margin: 0;
 }
-.Buscador{
-    width: 100%;
+.B1{
     height: 100vh;
+}
+.B2{
+    @media (min-width: 667px) {
+        height: 100vh;  
+        align-items: center;
+    }
+}
+.Buscador{
+    width: 100%; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background: linear-gradient(180deg,#ff7700,#ffbb00,#ffcb20);
+    padding-top: 50px;
+    padding-bottom: 50px;
     .Buscador_contenedor{
         width: 60%;
         height: 10cm;
@@ -21,6 +31,8 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        // background: white;
+
         // border: 1px solid black;
         .Buscador_contenedor_div1{
             img{
@@ -32,7 +44,7 @@ body{
 
         .Buscador_Contenedor_div2{
             width: 60%;
-            min-width: 12.5cm;
+            min-width: 1cm;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -41,10 +53,10 @@ body{
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
             border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 10px;
             .BC_div2_Span1{
                 width: 100%;
-                min-width: 12cm;
+                min-width: 8cm;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -58,6 +70,8 @@ body{
                     border: none;
                     outline: none;
                     font-size: 18px;
+                    border-radius: 10px;
+
                 }
                 i{
                     height: 30px;
@@ -71,6 +85,7 @@ body{
             }
             .Resultado{
                 width: 96%;
+                min-width: 7.75cm;
                 padding: 5px;
                 display: none;
                 flex-direction: column;
@@ -87,6 +102,96 @@ body{
                     }
                 }
             }
+            
         }
+    }
+    .Card{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        background: white;
+        padding: 20px;
+        border: 1px solid #ff9d00;
+        border-radius: 30px;
+        box-shadow: 1px 1px 30px 10px #fb86002f;
+        .Card_div1{
+            display: flex;
+            justify-content: center;
+            align-items: last baseline;
+            position: relative;
+            img{
+                height: 400px;
+            }
+            
+        }
+        .Card_div2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            .GIn_Card_div2{
+                width: 100%;
+                display: flex;
+                h2{
+                    margin: 0;
+                }
+
+                .Card_div2_d1{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px;
+                }
+                .Card_div2_d2{
+                    
+                }
+                .Card_div2_d3{
+                    
+                }
+            }
+            
+            .Card_div2_d4{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                h2{
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .divbtn{
+            padding: 10px;
+            button{
+                height: 1.2cm;
+                width: 4cm;
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+                background: #ff9d00;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+.B1{
+    height: 100vh;
+}
+.B2{
+    @media (min-width: 667px) {
+        height: 100vh;  
+        align-items: center;
     }
 }
