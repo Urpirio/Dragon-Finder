@@ -25,7 +25,7 @@ const Buscador4 = async (ValueInput) => {
             
             let ArrayValueInput = ValueInput.split('')
             for(let x = 0; x < Data.items.length; x++){
-                if(ValueInput == Data.items[x].name){
+                if(ValueInput.toUpperCase() == Data.items[x].name.toUpperCase()){
                     document.querySelector('.Resultado').style.display = 'flex';
                     document.querySelector('.Resultado').innerHTML = '';
                     const spanS = document.createElement('span');
@@ -61,7 +61,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
 
                                 if(Filtro1 === true){
 
@@ -100,7 +100,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
 
 
@@ -141,7 +141,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
 
@@ -182,7 +182,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
@@ -224,7 +224,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
@@ -267,7 +267,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
@@ -311,7 +311,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
@@ -357,7 +357,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
@@ -404,7 +404,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
@@ -451,7 +451,7 @@ const Buscador4 = async (ValueInput) => {
 
                                 let ArrayNameValueInput = Data.items[z].name.split('');
 
-                                Filtro1 = ArrayValueInput[0] == ArrayNameValueInput[0];
+                                Filtro1 = ArrayValueInput[0].toUpperCase() == ArrayNameValueInput[0];
                                 Filtro2 = Filtro1 && ArrayValueInput[1] == ArrayNameValueInput[1];
                                 Filtro3 = Filtro2 && ArrayValueInput[2] == ArrayNameValueInput[2];
                                 Filtro4 = Filtro3 && ArrayValueInput[3] == ArrayNameValueInput[3];
