@@ -1,4 +1,4 @@
-import { ValueInput } from "../components/Buscador";
+// import { ValueInput } from "../components/Buscador";
 import Infopersonaje from "./Infopersonaje";
 
 let Existe;
@@ -18,7 +18,7 @@ let Filtro13;
 let Filtro14;
 let Filtro15;
 
-const Buscador6 = async () => {
+const Buscador6 = async (ValueInput) => {
     let Yes_Pass;
     console.log('Se final 6')
 
@@ -44,6 +44,8 @@ const Buscador6 = async () => {
                         Data.items[x].ki,Data.items[x].maxKi,
                         Data.items[x].race,Data.items[x].gender,
                         Data.items[x].description,Data.items[x].image);
+                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                     });                    
                     Existe = true;
                     document.querySelector('.Resultado').append(spanS);
@@ -80,6 +82,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -116,6 +120,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -151,6 +157,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -187,6 +195,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -224,6 +234,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -262,6 +274,9 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
+                                        
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -302,6 +317,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -343,6 +360,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -384,6 +403,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -426,6 +447,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -468,6 +491,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -511,6 +536,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                
                                 document.querySelector('.Resultado').append(spanS);
                                 Yes_Pass = true;
@@ -556,6 +583,8 @@ const Buscador6 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -601,6 +630,8 @@ const Buscador6 = async () => {
                                             Data.items[z].ki,Data.items[z].maxKi,
                                             Data.items[z].race,Data.items[z].gender,
                                             Data.items[z].description,Data.items[z].image);
+                                            document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                         });                                        
                                         document.querySelector('.Resultado').append(spanS);
                                         Yes_Pass = true;
@@ -647,6 +678,8 @@ const Buscador6 = async () => {
                                             Data.items[z].ki,Data.items[z].maxKi,
                                             Data.items[z].race,Data.items[z].gender,
                                             Data.items[z].description,Data.items[z].image);
+                                            document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                         });                                        
                                         document.querySelector('.Resultado').append(spanS);
                                         Yes_Pass = true;
