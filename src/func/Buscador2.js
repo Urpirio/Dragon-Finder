@@ -1,4 +1,4 @@
-import { ValueInput } from "../components/Buscador";
+// import { ValueInput } from "../components/Buscador";
 import Buscador3 from "./Buscador3";
 import Infopersonaje from "./Infopersonaje";
 
@@ -14,7 +14,7 @@ let Filtro8;
 let Filtro9;
 
 
-const Buscador2 = async () => {
+const Buscador2 = async (ValueInput) => {
     let Yes_Pass;
 
     fetch('https://dragonball-api.com/api/characters?page=2&limit=9').then(
@@ -39,6 +39,7 @@ const Buscador2 = async () => {
                         Data.items[x].ki,Data.items[x].maxKi,
                         Data.items[x].race,Data.items[x].gender,
                         Data.items[x].description,Data.items[x].image);
+                        document.querySelector('.Buscador').classList.replace('B1','B2');
                     });                    
                     Existe = true;
                     document.querySelector('.Resultado').append(spanS);
@@ -75,6 +76,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -85,7 +88,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                                 console.log('funciona')
                             }else{
 
@@ -116,6 +119,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -126,7 +131,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -155,6 +160,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -165,7 +172,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -195,6 +202,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -205,7 +214,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -236,6 +245,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -246,7 +257,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -278,6 +289,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -288,7 +301,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -322,6 +335,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -332,7 +347,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -367,6 +382,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -377,7 +394,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -412,6 +429,8 @@ const Buscador2 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -422,7 +441,7 @@ const Buscador2 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }else{
 
                             }
@@ -430,7 +449,7 @@ const Buscador2 = async () => {
                             document.querySelector('.Resultado').style.display = 'none';
 
                             if(Yes_Pass === undefined){
-                                Buscador3();
+                                Buscador3(ValueInput);
                             }
                         }
             }else{
