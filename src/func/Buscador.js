@@ -1,5 +1,6 @@
 import Buscador2 from "./Buscador2";
 import { ValueInput } from "../components/Buscador";
+import Infopersonaje from "./Infopersonaje";
 
 let Existe;
 let Filtro1;
@@ -28,6 +29,12 @@ const BuscadorZ = async () => {
                     const iconS = document.createElement('i');
                     iconS.className = 'bx bx-search';
                     spanS.append(iconS,InSpanS);
+                    spanS.addEventListener('click',()=>{
+                        Infopersonaje(Data.items[x].name,
+                        Data.items[x].ki,Data.items[x].maxKi,
+                        Data.items[x].race,Data.items[x].gender,
+                        Data.items[x].description,Data.items[x].image);
+                    });
                     Existe = true;
                     document.querySelector('.Resultado').append(spanS);
 
@@ -59,6 +66,12 @@ const BuscadorZ = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
@@ -93,6 +106,12 @@ const BuscadorZ = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
@@ -127,6 +146,12 @@ const BuscadorZ = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
@@ -161,6 +186,12 @@ const BuscadorZ = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
@@ -196,6 +227,12 @@ const BuscadorZ = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
@@ -232,6 +269,12 @@ const BuscadorZ = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
