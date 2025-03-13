@@ -1,4 +1,4 @@
-import { ValueInput } from "../components/Buscador";
+// import { ValueInput } from "../components/Buscador";
 import Buscador4 from "./Buscador4";
 import Infopersonaje from "./Infopersonaje";
 
@@ -13,7 +13,7 @@ let Filtro7;
 let Filtro8;
 let Filtro9;
 
-const Buscador3 = async () => {
+const Buscador3 = async (ValueInput) => {
     let Yes_Pass;
 
     fetch('https://dragonball-api.com/api/characters?page=3&limit=10').then(
@@ -37,6 +37,8 @@ const Buscador3 = async () => {
                         Data.items[x].ki,Data.items[x].maxKi,
                         Data.items[x].race,Data.items[x].gender,
                         Data.items[x].description,Data.items[x].image);
+                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                     });                    
                     Existe = true;
                     document.querySelector('.Resultado').append(spanS);
@@ -73,6 +75,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -83,7 +87,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -113,6 +117,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -123,7 +129,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -152,6 +158,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -163,7 +171,7 @@ const Buscador3 = async () => {
                             }
                             if(Yes_Pass === undefined){
 
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -193,6 +201,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -203,7 +213,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -234,6 +244,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -244,7 +256,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -276,6 +288,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -286,7 +300,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -320,6 +334,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -330,7 +346,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -365,6 +381,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -375,7 +393,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -410,6 +428,8 @@ const Buscador3 = async () => {
                                         Data.items[z].ki,Data.items[z].maxKi,
                                         Data.items[z].race,Data.items[z].gender,
                                         Data.items[z].description,Data.items[z].image);
+                                        document.querySelector('.Buscador').classList.replace('B1','B2');
+
                                     });                                    
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
@@ -420,7 +440,7 @@ const Buscador3 = async () => {
 
                             }
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }else{
 
                             }
@@ -428,7 +448,7 @@ const Buscador3 = async () => {
                             document.querySelector('.Resultado').style.display = 'none';
 
                             if(Yes_Pass === undefined){
-                                Buscador4();
+                                Buscador4(ValueInput);
                             }
                         }
             }else{
