@@ -70,6 +70,12 @@ const Buscador2 = async () => {
                                     const iconS = document.createElement('i');
                                     iconS.className = 'bx bx-search';
                                     spanS.append(iconS,InSpanS);
+                                    spanS.addEventListener('click',()=>{
+                                        Infopersonaje(Data.items[z].name,
+                                        Data.items[z].ki,Data.items[z].maxKi,
+                                        Data.items[z].race,Data.items[z].gender,
+                                        Data.items[z].description,Data.items[z].image);
+                                    });
                                     document.querySelector('.Resultado').append(spanS);
                                     Yes_Pass = true;
 
