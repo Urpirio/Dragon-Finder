@@ -1,6 +1,6 @@
-
+import Cerrar from "./Cerrar";
 export let MauseOver;
-export default function Infopersonaje(Name,ki,MaxKi,Race,Gender,Description,ImgPersonaje){
+export default function Buscador(Name,ki,MaxKi,Race,Gender,Description,ImgPersonaje){
 
 
     if(Name == 'Gohan'){
@@ -42,17 +42,10 @@ export default function Infopersonaje(Name,ki,MaxKi,Race,Gender,Description,ImgP
         Boleano2 = false;
     }
 
-    const InfoPersonaje = document.querySelector('.InfoPersonaje');
-    InfoPersonaje.innerHTML = '';
-    InfoPersonaje.style.display = 'flex';
+    const Buscador = document.querySelector('.Buscador');
+    Buscador.innerHTML = '';
     console.log(Name,ki,MaxKi,Race,Gender,Description,ImgPersonaje);
     const Card = document.createElement('div');
-    Card.addEventListener('mouseover',()=>{
-        MauseOver = true;
-    });
-    Card.addEventListener('mouseleave',()=>{
-        MauseOver = false;
-    });
     
     Card.className = 'Card';
     Card.innerHTML = `
@@ -73,15 +66,21 @@ export default function Infopersonaje(Name,ki,MaxKi,Race,Gender,Description,ImgP
             <p>${Description}</p>
         </div>
     </div>
-    `;
-    InfoPersonaje.append(Card);
-};
-{/* <div class = 'Card_div2_d2'>
-                <h2>Ki Base</h2>
-                <span>${ki}</span>
-            </div>
+    <div class = 'divbtn'>
 
-            <div class = 'Card_div2_d3'>
-                <h2>Ki Maximo</h2>
-                <span>${MaxKi}</span>
-            </div> */}
+    <div>
+    `;
+    Buscador.append(Card);
+
+    let btnclose = document.createElement('button');
+    btnclose.innerText = 'Cerrar';
+    btnclose.addEventListener('click',()=>{
+        Cerrar();
+        document.querySelector('.Buscador').classList.replace('B2','B1');
+        document.querySelector('.Buscador').style.background = 'linear-gradient(180deg,#ff7700,#ffbb00,#ffcb20)';
+    });
+    document.querySelector('.divbtn').append(btnclose);
+
+
+
+};
