@@ -1,3 +1,15 @@
+/**
+ * Función principal de búsqueda de personajes de Dragon Ball
+ * 
+ * Busca personajes en la API de Dragon Ball y muestra los resultados en tiempo real.
+ * Implementa un sistema de búsqueda inteligente que incluye:
+ * - Coincidencia exacta del nombre completo
+ * - Búsqueda por prefijo (hasta 6 caracteres)
+ * - Búsqueda insensible a mayúsculas/minúsculas
+ * 
+ * @param {string} ValueInput - El texto ingresado por el usuario en el campo de búsqueda
+ * @returns {Promise<void>} Promesa que se resuelve cuando se completa la búsqueda
+ */
 import Buscador2 from "./Buscador2";
 // import { ValueInput } from "../components/Buscador";
 import Infopersonaje from "./Infopersonaje";
