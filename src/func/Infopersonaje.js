@@ -1,8 +1,24 @@
+/**
+ * Renderiza la tarjeta de información detallada de un personaje de Dragon Ball
+ * 
+ * Esta función crea y muestra una tarjeta con toda la información del personaje,
+ * incluyendo imagen, estadísticas, descripción y opciones de cierre.
+ * También aplica un esquema de colores personalizado según el personaje.
+ * 
+ * @param {string} Name - Nombre del personaje
+ * @param {string} ki - Nivel de Ki (energía) del personaje
+ * @param {string} MaxKi - Nivel máximo de Ki del personaje
+ * @param {string} Race - Raza del personaje (Saiyan, Human, Namekian, etc.)
+ * @param {string} Gender - Género del personaje (Male/Female)
+ * @param {string} Description - Descripción detallada del personaje
+ * @param {string} ImgPersonaje - URL de la imagen del personaje
+ * @returns {void}
+ */
 import Cerrar from "./Cerrar";
 export let MauseOver;
 export default function Buscador(Name,ki,MaxKi,Race,Gender,Description,ImgPersonaje){
 
-
+    // Aplica un esquema de colores personalizado según el personaje
     if(Name == 'Gohan'){
         document.querySelector('.Buscador').style.background = '#4A4481';
     }else if(Name == 'Gotenks'){
@@ -30,12 +46,14 @@ export default function Buscador(Name,ki,MaxKi,Race,Gender,Description,ImgPerson
     let Boleano;
     let Boleano2;
 
+    // Convierte el género a booleano para la traducción
     if(Gender == 'Male'){
         Boleano = true;
     }else{
         Boleano = false;
     };
 
+    // Verifica si el personaje es humano para la traducción
     if(Race == 'Human'){
         Boleano2 = true;
     }else{

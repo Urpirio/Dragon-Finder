@@ -1,3 +1,14 @@
+/**
+ * Componente principal de búsqueda de personajes de Dragon Ball
+ * 
+ * Este componente renderiza la interfaz principal de búsqueda que incluye:
+ * - Logo de Dragon Ball Super
+ * - Campo de búsqueda con autocompletado
+ * - Área de resultados
+ * 
+ * @component
+ * @returns {JSX.Element} Componente de búsqueda de personajes
+ */
 import React from 'react'
 import LogoDBS from "../img/logos/image.png";
 import '../Style/Buscador.less';
@@ -7,6 +18,10 @@ import BuscadorZ from '../func/Buscador';
 
 export default function Buscador() {
 
+    /**
+     * Maneja el evento de entrada del usuario en el campo de búsqueda
+     * Llama a la función BuscadorZ para buscar personajes en tiempo real
+     */
     const EstaBuscando = () => {
         BuscadorZ(document.getElementById('Buscador').value);
     };
